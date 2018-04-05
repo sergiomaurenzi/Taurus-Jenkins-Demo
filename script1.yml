@@ -20,7 +20,7 @@ services:
 - module: passfail
   criteria:
   - avg-rt>15ms for 7s, stop as failed
-  - hits of reserve >10 for 13s, continue as failed
+  - hits of reserve >10 for 10s, continue as failed
 reporting:
 - module: junit-xml
   filename: /var/lib/jenkins/workspace/Test/junit-report.xml
