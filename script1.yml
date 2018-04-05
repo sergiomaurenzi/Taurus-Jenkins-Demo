@@ -23,5 +23,5 @@ services:
   - hits of reserve >10 for 10s, continue as failed
 reporting:
 - module: junit-xml
-  filename: /var/lib/jenkins/workspace/Test/junit-report.xml
-#  data-source: pass-fail
+  filename: /var/lib/jenkins/workspace/Taurus-Jenkins-Demo/junit-report.xml
+  data-source: pass-fail
