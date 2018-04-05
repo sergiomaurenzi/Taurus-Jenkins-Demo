@@ -24,4 +24,4 @@ services:
 reporting:
 - module: junit-xml
   filename: /var/lib/jenkins/workspace/Test/junit-report.xml
-  data-source: pass-fail
+#  data-source: pass-fail
