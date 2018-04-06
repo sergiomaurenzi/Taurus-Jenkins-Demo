@@ -1,0 +1,4 @@
+execution:
+- executor: selenium
+  scenario: 
+    script: test_purchase_tickets.py
