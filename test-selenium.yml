@@ -3,3 +3,7 @@ execution:
   runner: pytest
   scenario: 
     script: purchase_tickets_test.py
+services:
+- module: virtual-display
+  width: 1024
+  height: 768
