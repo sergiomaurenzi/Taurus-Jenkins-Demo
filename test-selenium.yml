@@ -1,4 +1,5 @@
 execution:
 - executor: selenium
+  concurrency: 10
   scenario: 
-    script: test_purchase_tickets.py
+    script: purchase_tickets_test.py

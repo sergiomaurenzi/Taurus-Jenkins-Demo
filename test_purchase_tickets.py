@@ -1,5 +1,5 @@
 # coding=utf-8
-import helpers.helpers as utils
+#import helpers.helpers as utils
 import pytest
 from selenium.webdriver.common.by import By
 
