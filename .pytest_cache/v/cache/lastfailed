@@ -1,3 +1,10 @@
 {
-  "purchase_tickets_test.py::purchaseTicketTest::test_method": true
+  "test_purchase_tickets.py::test_find_flights[Boston-London]": true, 
+  "test_purchase_tickets.py::test_find_flights[Mexico City-Dublin]": true, 
+  "test_purchase_tickets.py::test_find_flights[Paris-Buenos Aires]": true, 
+  "test_purchase_tickets.py::test_find_flights[Philadelphia-Rome]": true, 
+  "test_purchase_tickets.py::test_find_flights[Portland-Berlin]": true, 
+  "test_purchase_tickets.py::test_find_flights[San Diego-New York]": true, 
+  "test_purchase_tickets.py::test_find_flights[Tel Aviv-Dubai]": true, 
+  "test_purchase_tickets.py::test_teardown": true
 }

@@ -38,7 +38,7 @@ class purchaseTicketTest(unittest.TestCase):
        self.driver.implicitly_wait(10)
 
        # Maximize window
-       #self.driver.maximize_window()
+       self.driver.maximize_window()
 
 
 
@@ -56,10 +56,10 @@ class purchaseTicketTest(unittest.TestCase):
        """ Find flight tickets """
 
        # Choose departure city
-       self.driver.find_element(By.XPATH, "//select[@name='fromPort']/option[text()='Mexico City']").click()
+       self.driver.find_element(By.XPATH, "//select[@name='fromPort']/option[text()='Boston']").click()
 
        # Choose destination city
-       self.driver.find_element(By.XPATH, "//select[@name='toPort']/option[text()='New York']").click()
+       self.driver.find_element(By.XPATH, "//select[@name='toPort']/option[text()='Buenos Aires']").click()
 
        # Find Flights
        self.driver.find_element(By.CLASS_NAME, 'btn-primary').click()
@@ -85,13 +85,13 @@ class purchaseTicketTest(unittest.TestCase):
 
    def purchase_flight(self):
        """ Purchase flight and fill out form"""
-       self.driver.find_element(By.ID, 'inputName').send_keys("Michael Jordan")
-       self.driver.find_element(By.ID, 'address').send_keys("75th Avenue")
-       self.driver.find_element(By.ID, 'city').send_keys("Chicago")
-       self.driver.find_element(By.ID, 'state').send_keys("Illinois")
+       self.driver.find_element(By.ID, 'inputName').send_keys("Lionel Messi")
+       self.driver.find_element(By.ID, 'address').send_keys("Av.Del Libertador 1234")
+       self.driver.find_element(By.ID, 'city').send_keys("Buenos Aires")
+       self.driver.find_element(By.ID, 'state').send_keys("Buenos Aires")
        self.driver.find_element(By.ID, 'zipCode').send_keys("12345")
        self.driver.find_element(By.ID, 'creditCardNumber').send_keys("4580123412341234")
-       self.driver.find_element(By.ID, 'nameOnCard').send_keys("Air Mike")
+       self.driver.find_element(By.ID, 'nameOnCard').send_keys("Leo Messi")
 
        # Click purchase flight
        self.driver.find_element(By.CLASS_NAME, 'btn-primary').click()

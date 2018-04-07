@@ -1,5 +1,5 @@
 execution:
 - executor: selenium
-  concurrency: 10
+  runner: pytest
   scenario: 
     script: purchase_tickets_test.py
