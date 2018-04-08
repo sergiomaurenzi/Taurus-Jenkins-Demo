@@ -6,14 +6,20 @@ from selenium import webdriver
 
 # Optional: import 'By' for ease of use
 from selenium.webdriver.common.by import By
+#from pyvirtualdisplay import Display
 
 # Optional: import 'sleep' for browser's time issues
 from time import sleep
 
+
 # Global 'url' variable to set the relevant website where we run our tests
 url = "http://blazedemo.com"
 
-"""Create a class 'purchaseTicketTest' that includes:
+# Added by Sergio M.
+options = webdriver.ChromeOptions()
+
+
+"""Create a class 'purchaseTicketTest' that inclself.driver = webdriver.Chrome(chrome_options=chrome_options)udes:
 
 1. setUp - ChromeDriver initiation
 2. functions - that can be used throughout the project
@@ -27,9 +33,15 @@ class purchaseTicketTest(unittest.TestCase):
    def setUp(self):
 
        """ Create ChromeDriver instance with blank page, wait policy of 10 seconds and maximize the window"""
+       
+       # Set options -- Added by Sergio M.
+       options.add_argument('headless')
+       # set the window size - Added by Sergio M.
+       options.add_argument('window-size=1200x600')
 
        # Initiate ChromeDriver instance
-       self.driver = webdriver.Chrome()
+       #self.driver = webdriver.Chrome()
+       self.driver = webdriver.Chrome(chrome_options=chrome_options)
 
        # Open 'blazedemo.com' home page
        self.driver.get("http://blazedemo.com")

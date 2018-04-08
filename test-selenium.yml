@@ -3,7 +3,10 @@ execution:
   runner: pytest
   scenario: 
     script: purchase_tickets_test.py
-services:
-- module: virtual-display
-  width: 1024
-  height: 768
+reporting:
+- module: final-stats
+  summary: true  # overall samples count and percent of failures
+  percentiles: true  # display average times and percentiles
+  failed-labels: false  # provides list of sample labels with failures
+  test-duration: true  # provides test duration
+  dump-xml: stats.xml
