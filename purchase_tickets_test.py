@@ -15,6 +15,7 @@ from time import sleep
 # Global 'url' variable to set the relevant website where we run our tests
 url = "http://blazedemo.com"
 
+
 # Added by Sergio M.
 options = webdriver.ChromeOptions()
 
@@ -41,7 +42,7 @@ class purchaseTicketTest(unittest.TestCase):
 
        # Initiate ChromeDriver instance
        #self.driver = webdriver.Chrome()
-       self.driver = webdriver.Chrome(chrome_options=chrome_options)
+       self.driver = webdriver.Chrome(chrome_options=options)
 
        # Open 'blazedemo.com' home page
        self.driver.get("http://blazedemo.com")
