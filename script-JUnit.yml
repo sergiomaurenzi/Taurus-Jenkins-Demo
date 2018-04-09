@@ -1,0 +1,18 @@
+execution:
+- executor: junit
+  iterations: 5  # loop over test suite for 5 times  
+  scenario: complex
+  
+scenarios:
+  complex:
+    script: JUnitTest.java
+    additional-classpath:  # optional, following libs will be added to java classpath
+    - deps/gson-1.0.1.jar
+    - deps/common-utils-0.15.1.jar  
+    
+modules:
+  junit:
+    jar-name: compiled.jar
+        
+reporting:
+- module: junit-xml
