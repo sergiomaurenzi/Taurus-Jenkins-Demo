@@ -1,5 +1,4 @@
 {
-  "purchase_tickets_test.py::purchaseTicketTest": true, 
   "test_purchase_tickets.py::test_find_flights[Boston-London]": true, 
   "test_purchase_tickets.py::test_find_flights[Mexico City-Dublin]": true, 
   "test_purchase_tickets.py::test_find_flights[Paris-Buenos Aires]": true, 

@@ -16,6 +16,10 @@ from time import sleep
 url = "http://blazedemo.com"
 
 
+# Added by Sergio M.
+options = webdriver.ChromeOptions()
+
+
 """Create a class 'purchaseTicketTest' that inclself.driver = webdriver.Chrome(chrome_options=chrome_options)udes:
 
 1. setUp - ChromeDriver initiation
@@ -31,9 +35,14 @@ class purchaseTicketTest(unittest.TestCase):
 
        """ Create ChromeDriver instance with blank page, wait policy of 10 seconds and maximize the window"""
        
+       # Set options -- Added by Sergio M.
+       options.add_argument('headless')
+       # set the window size - Added by Sergio M.
+       options.add_argument('window-size=1200x600')
 
        # Initiate ChromeDriver instance
-       self.driver = webdriver.Chrome()
+       #self.driver = webdriver.Chrome()
+       self.driver = webdriver.Chrome(chrome_options=options)
 
        # Open 'blazedemo.com' home page
        self.driver.get("http://blazedemo.com")
