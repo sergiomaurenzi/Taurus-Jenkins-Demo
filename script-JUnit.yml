@@ -1,10 +1,10 @@
 execution:
 - executor: junit
   iterations: 5  # loop over test suite for 5 times  
-  scenario: simple-java
+  scenario: simple
   
 scenarios:
-  simple-java:
+  simple:
     script: JUnitTest.java
 
 modules:
