@@ -1,0 +1,16 @@
+execution:
+- executor: junit
+  iterations: 5  # loop over test suite for 5 times  
+  scenario: simple
+  
+scenarios:
+  simple:
+    script: JUnitTest.java
+
+modules:
+  junit:
+    jar-name: compiled.jar
+        
+reporting:
+- module: junit-xml
+  filename: junit-report.xml
