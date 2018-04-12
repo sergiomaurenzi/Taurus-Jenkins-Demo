@@ -10,8 +10,8 @@ reporting:
   failed-labels: false  # provides list of sample labels with failures
   test-duration: true  # provides test duration
   dump-xml: stats.xml
-services:
-- module: proxy2jmx
+#services:
+#- module: proxy2jmx
 
-modules:
-  proxy2jmx:
+#modules:
+#  proxy2jmx:
