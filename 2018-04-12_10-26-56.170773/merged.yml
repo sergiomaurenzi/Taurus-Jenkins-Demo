@@ -1,0 +1,14 @@
+---
+execution:
+- executor: selenium
+  runner: pytest
+  scenario:
+    script: purchase_tickets_test.py
+reporting:
+- dump-xml: stats.xml
+  failed-labels: false
+  module: final-stats
+  percentiles: true
+  summary: true
+  test-duration: true
+

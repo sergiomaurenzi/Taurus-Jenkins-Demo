@@ -1,0 +1,127 @@
+[2018-04-12 10:26:56,094 INFO root] Taurus CLI Tool v1.11.0
+[2018-04-12 10:26:56,094 DEBUG root] Command-line options: {'verbose': None, 'no_system_configs': None, 'quiet': None, 'log': '/var/folders/db/22vnvx8j4xz2xw6yvkfbmkr80000gn/T/bzt_87Sd8m.log', 'option': None, 'aliases': []}
+[2018-04-12 10:26:56,094 DEBUG root] Python: CPython 2.7.12
+[2018-04-12 10:26:56,094 DEBUG root] OS: ('Darwin', 'MacBook-Pro-de-Sergio-2.local', '17.5.0', 'Darwin Kernel Version 17.5.0: Mon Mar  5 22:24:32 PST 2018; root:xnu-4570.51.1~1/RELEASE_X86_64', 'x86_64', 'i386')
+[2018-04-12 10:26:56,094 INFO root] Starting with configs: ['script-selenium.yml']
+[2018-04-12 10:26:56,095 DEBUG root] Using personal config: /Users/sergiomaurenzi/.bzt-rc
+[2018-04-12 10:26:56,095 INFO Engine] Configuring...
+[2018-04-12 10:26:56,095 DEBUG Engine] Reading extension configs from: /usr/local/etc/bzt.d
+[2018-04-12 10:26:56,095 DEBUG Engine] Base configs list: ['/usr/local/lib/python2.7/site-packages/bzt/resources/base-config.yml', '/usr/local/etc/bzt.d/99-installID.yml']
+[2018-04-12 10:26:56,095 DEBUG Engine.Configuration] Configs: ['/usr/local/lib/python2.7/site-packages/bzt/resources/base-config.yml', '/usr/local/etc/bzt.d/99-installID.yml']
+[2018-04-12 10:26:56,095 DEBUG Engine.Configuration] Reading /usr/local/lib/python2.7/site-packages/bzt/resources/base-config.yml as YAML
+[2018-04-12 10:26:56,127 DEBUG Engine.Configuration] Reading /usr/local/etc/bzt.d/99-installID.yml as YAML
+[2018-04-12 10:26:56,128 DEBUG Engine] User configs list: ['/Users/sergiomaurenzi/.bzt-rc', 'script-selenium.yml']
+[2018-04-12 10:26:56,128 DEBUG Engine.Configuration] Configs: ['/Users/sergiomaurenzi/.bzt-rc', 'script-selenium.yml']
+[2018-04-12 10:26:56,129 DEBUG Engine.Configuration] Reading /Users/sergiomaurenzi/.bzt-rc as YAML
+[2018-04-12 10:26:56,135 DEBUG Engine.Configuration] Reading script-selenium.yml as YAML
+[2018-04-12 10:26:56,139 DEBUG Engine.Configuration] Configs: ['/Users/sergiomaurenzi/.bzt-rc', 'script-selenium.yml']
+[2018-04-12 10:26:56,139 DEBUG Engine.Configuration] Reading /Users/sergiomaurenzi/.bzt-rc as YAML
+[2018-04-12 10:26:56,146 DEBUG Engine.Configuration] Reading script-selenium.yml as YAML
+[2018-04-12 10:26:56,170 DEBUG Engine] Requesting updates info: http://gettaurus.org/updates/?version=1.11.0&installID=a45e60ee260f
+[2018-04-12 10:26:56,171 INFO Engine] Artifacts dir: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773
+[2018-04-12 10:26:56,177 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective
+[2018-04-12 10:26:56,182 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.yml
+[2018-04-12 10:26:56,209 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.json
+[2018-04-12 10:26:56,211 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/merged.yml
+[2018-04-12 10:26:56,212 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/merged.yml
+[2018-04-12 10:26:56,216 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/merged.json
+[2018-04-12 10:26:56,217 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/merged.json
+[2018-04-12 10:26:56,219 DEBUG Engine] Add existing artifact (move=False): script-selenium.yml
+[2018-04-12 10:26:56,220 DEBUG Engine] Copying script-selenium.yml to /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/script-selenium.yml
+[2018-04-12 10:26:56,221 DEBUG root] Closing log handler: /var/folders/db/22vnvx8j4xz2xw6yvkfbmkr80000gn/T/bzt_87Sd8m.log
+[2018-04-12 10:26:56,222 DEBUG root] Switched writing logs to /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/bzt.log
+[2018-04-12 10:26:56,222 DEBUG root] Linting config
+[2018-04-12 10:26:56,226 INFO Engine] Preparing...
+[2018-04-12 10:26:56,226 DEBUG Engine] Module config: consolidator defaultdict(None, {'class': 'bzt.modules.aggregator.ConsolidatingAggregator'})
+[2018-04-12 10:26:56,226 DEBUG root] Importing module: bzt.modules.aggregator
+[2018-04-12 10:26:56,571 DEBUG root] Loading class: 'ConsolidatingAggregator' from <module 'bzt.modules.aggregator' from '/usr/local/lib/python2.7/site-packages/bzt/modules/aggregator.pyc'>
+[2018-04-12 10:26:56,571 DEBUG Engine.consolidator] Buffer scaling setup: percentile 95.0 from [0.0, 50.0, 90.0, 95.0, 99.0, 99.9, 100.0] selected
+[2018-04-12 10:26:56,571 DEBUG Engine] Module config: monitoring defaultdict(None, {'class': 'bzt.modules.monitoring.Monitoring'})
+[2018-04-12 10:26:56,571 DEBUG root] Importing module: bzt.modules.monitoring
+[2018-04-12 10:26:56,574 DEBUG root] Loading class: 'Monitoring' from <module 'bzt.modules.monitoring' from '/usr/local/lib/python2.7/site-packages/bzt/modules/monitoring.pyc'>
+[2018-04-12 10:26:56,574 DEBUG Engine] Module config: local defaultdict(None, {'class': 'bzt.modules.provisioning.Local'})
+[2018-04-12 10:26:56,575 DEBUG root] Importing module: bzt.modules.provisioning
+[2018-04-12 10:26:56,575 DEBUG root] Loading class: 'Local' from <module 'bzt.modules.provisioning' from '/usr/local/lib/python2.7/site-packages/bzt/modules/provisioning.pyc'>
+[2018-04-12 10:26:56,575 DEBUG Engine] Module config: selenium defaultdict(None, {'class': 'bzt.modules.selenium.SeleniumExecutor'})
+[2018-04-12 10:26:56,575 DEBUG root] Importing module: bzt.modules.selenium
+[2018-04-12 10:26:56,577 DEBUG root] Loading class: 'SeleniumExecutor' from <module 'bzt.modules.selenium' from '/usr/local/lib/python2.7/site-packages/bzt/modules/selenium.pyc'>
+[2018-04-12 10:26:56,577 DEBUG Engine.local] Preparing executor: selenium/4584605520
+[2018-04-12 10:26:56,580 DEBUG Engine.selenium] Using script type: pytest
+[2018-04-12 10:26:56,580 DEBUG Engine] Module config: pytest defaultdict(None, {'class': 'bzt.modules.python.PyTestExecutor'})
+[2018-04-12 10:26:56,580 DEBUG root] Importing module: bzt.modules.python
+[2018-04-12 10:26:56,998 DEBUG root] Loading class: 'PyTestExecutor' from <module 'bzt.modules.python' from '/usr/local/lib/python2.7/site-packages/bzt/modules/python.pyc'>
+[2018-04-12 10:26:56,999 DEBUG Engine.pytest] Extract defaultdict(None, {'script': 'purchase_tickets_test.py'}) into scenarios
+[2018-04-12 10:26:56,999 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/PyTestExecutor.ldjson
+[2018-04-12 10:26:57,000 DEBUG Engine] Module config: final-stats defaultdict(None, {'class': 'bzt.modules.reporting.FinalStatus'})
+[2018-04-12 10:26:57,000 DEBUG root] Importing module: bzt.modules.reporting
+[2018-04-12 10:26:57,302 DEBUG easyprocess] version=0.2.3
+[2018-04-12 10:26:57,319 DEBUG pyvirtualdisplay] version=0.2.1
+[2018-04-12 10:26:57,323 DEBUG root] Loading class: 'FinalStatus' from <module 'bzt.modules.reporting' from '/usr/local/lib/python2.7/site-packages/bzt/modules/reporting.pyc'>
+[2018-04-12 10:26:57,323 DEBUG Engine] Module config: console defaultdict(None, {'class': 'bzt.modules.console.ConsoleStatusReporter'})
+[2018-04-12 10:26:57,324 DEBUG root] Importing module: bzt.modules.console
+[2018-04-12 10:26:57,324 DEBUG root] Loading class: 'ConsoleStatusReporter' from <module 'bzt.modules.console' from '/usr/local/lib/python2.7/site-packages/bzt/modules/console.pyc'>
+[2018-04-12 10:26:57,338 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.yml
+[2018-04-12 10:26:57,386 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.json
+[2018-04-12 10:26:57,395 INFO Engine] Starting...
+[2018-04-12 10:26:57,396 DEBUG Engine] Startup <bzt.modules.monitoring.Monitoring object at 0x110330090>
+[2018-04-12 10:26:57,396 DEBUG Engine] Startup <bzt.modules.aggregator.ConsolidatingAggregator object at 0x110330ad0>
+[2018-04-12 10:26:57,397 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x111522150>
+[2018-04-12 10:26:57,397 DEBUG Engine] Startup <bzt.modules.console.ConsoleStatusReporter object at 0x111539550>
+[2018-04-12 10:26:57,398 INFO Engine.console] Waiting for results...
+[2018-04-12 10:26:57,398 DEBUG Engine] Startup <bzt.modules.reporting.FinalStatus object at 0x11154a190>
+[2018-04-12 10:26:57,398 DEBUG Engine] Startup <bzt.modules.provisioning.Local object at 0x10fee8450>
+[2018-04-12 10:26:57,398 DEBUG Engine.local] Delay setup for selenium/4584605520: 0(start-at) + 0(delay) = 0
+[2018-04-12 10:26:57,403 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.yml
+[2018-04-12 10:26:57,453 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.json
+[2018-04-12 10:26:57,457 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-04-12 10:26:57,458 DEBUG root] Leveled up log file verbosity
+[2018-04-12 10:26:57,459 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/pytest.out
+[2018-04-12 10:26:57,459 DEBUG Engine] New artifact filename: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/pytest.err
+[2018-04-12 10:26:57,460 DEBUG bzt.utils] Executing shell: ['/usr/local/opt/python/bin/python2.7', '/usr/local/lib/python2.7/site-packages/bzt/resources/pytest_runner.py', '--report-file', '/Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/PyTestExecutor.ldjson', 'purchase_tickets_test.py'] at /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo
+[2018-04-12 10:26:57,472 DEBUG root] Leveling down log file verbosity, use -v option to have DEBUG messages enabled
+[2018-04-12 10:26:57,822 INFO Engine.console] Waiting for finish...
+[2018-04-12 10:27:22,638 WARNING Engine] Please wait for graceful shutdown...
+[2018-04-12 10:27:22,643 DEBUG root] Leveled up log file verbosity
+[2018-04-12 10:27:22,643 INFO Engine] Shutting down...
+[2018-04-12 10:27:22,647 DEBUG Engine] Current stop reason: None
+[2018-04-12 10:27:22,647 DEBUG Engine.local] Shutdown selenium/4584605520
+[2018-04-12 10:27:22,647 DEBUG Engine.selenium] Selenium tests ran for 25.1886720657 seconds
+[2018-04-12 10:27:22,648 DEBUG Engine.console] Restoring logging streams, [<logging.StreamHandler object at 0x10fee1a50>]/{<logging.StreamHandler object at 0x10fee1a50>: <open file '<stdout>', mode 'w' at 0x10ebe2150>}
+[2018-04-12 10:27:22,650 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.yml
+[2018-04-12 10:27:22,683 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.json
+[2018-04-12 10:27:22,687 INFO Engine] Post-processing...
+[2018-04-12 10:27:22,688 DEBUG Engine.local] Post-process selenium/4584605520
+[2018-04-12 10:27:22,688 DEBUG Engine.pytest.TestReportReader.LDJSONReader.FileReader] Reading: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/PyTestExecutor.ldjson
+[2018-04-12 10:27:22,688 DEBUG LoadSamplesReader] Buffer len: 1
+[2018-04-12 10:27:22,688 DEBUG LoadSamplesReader] Aggregating: 1523539618
+[2018-04-12 10:27:22,744 DEBUG Engine.consolidator] Consolidator buffer[1]: [1523539618]
+[2018-04-12 10:27:22,744 DEBUG Engine.consolidator] Merging into 1523539618
+[2018-04-12 10:27:22,745 DEBUG Engine.consolidator] Merging 1523539618
+[2018-04-12 10:27:22,854 DEBUG Engine.consolidator] Processed datapoint: 1523539618/None
+[2018-04-12 10:27:22,854 INFO Engine.final-stats] Test duration: 0:00:25
+[2018-04-12 10:27:22,854 INFO Engine.final-stats] Samples count: 1, 0.00% failures
+[2018-04-12 10:27:22,855 INFO Engine.final-stats] Average times: total 22.786, latency 0.000, connect 0.000
+[2018-04-12 10:27:22,855 INFO Engine.final-stats] Percentile 0.0%: 22.784
+[2018-04-12 10:27:22,855 INFO Engine.final-stats] Percentile 50.0%: 22.799
+[2018-04-12 10:27:22,855 INFO Engine.final-stats] Percentile 90.0%: 22.799
+[2018-04-12 10:27:22,855 INFO Engine.final-stats] Percentile 95.0%: 22.799
+[2018-04-12 10:27:22,855 INFO Engine.final-stats] Percentile 99.0%: 22.799
+[2018-04-12 10:27:22,856 INFO Engine.final-stats] Percentile 99.9%: 22.799
+[2018-04-12 10:27:22,856 INFO Engine.final-stats] Percentile 100.0%: 22.799
+[2018-04-12 10:27:22,856 DEBUG Engine.console] No logger_handler or orig_stream was detected
+[2018-04-12 10:27:22,856 INFO Engine.final-stats] Test duration: 0:00:25
+[2018-04-12 10:27:22,856 INFO Engine.final-stats] Samples count: 1, 0.00% failures
+[2018-04-12 10:27:22,856 INFO Engine.final-stats] Average times: total 22.786, latency 0.000, connect 0.000
+[2018-04-12 10:27:22,857 INFO Engine.final-stats] Percentile 0.0%: 22.784
+[2018-04-12 10:27:22,857 INFO Engine.final-stats] Percentile 50.0%: 22.799
+[2018-04-12 10:27:22,857 INFO Engine.final-stats] Percentile 90.0%: 22.799
+[2018-04-12 10:27:22,857 INFO Engine.final-stats] Percentile 95.0%: 22.799
+[2018-04-12 10:27:22,857 INFO Engine.final-stats] Percentile 99.0%: 22.799
+[2018-04-12 10:27:22,857 INFO Engine.final-stats] Percentile 99.9%: 22.799
+[2018-04-12 10:27:22,857 INFO Engine.final-stats] Percentile 100.0%: 22.799
+[2018-04-12 10:27:22,858 INFO Engine.final-stats] Dumping final status as XML: stats.xml
+[2018-04-12 10:27:22,867 DEBUG Engine.Configuration] Dumping YAML config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.yml
+[2018-04-12 10:27:22,895 DEBUG Engine.Configuration] Dumping JSON config into /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/effective.json
+[2018-04-12 10:27:22,898 INFO root] Artifacts dir: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773
+[2018-04-12 10:27:22,898 INFO root] Done performing with code: 0
+[2018-04-12 10:27:22,899 DEBUG root] Closing log handler: /Users/sergiomaurenzi/Documents/GitHub/Taurus-Jenkins-Demo/2018-04-12_10-26-56.170773/bzt.log
