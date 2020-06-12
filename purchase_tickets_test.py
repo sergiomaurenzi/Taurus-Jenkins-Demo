@@ -13,7 +13,7 @@ from time import sleep
 
 
 # Global 'url' variable to set the relevant website where we run our tests
-url = "http://blazedemo.com"
+url = "https://blazedemo.com"
 
 
 """Create a class 'purchaseTicketTest' that inclself.driver = webdriver.Chrome(chrome_options=chrome_options)udes:
@@ -36,7 +36,7 @@ class purchaseTicketTest(unittest.TestCase):
        self.driver = webdriver.Chrome()
 
        # Open 'blazedemo.com' home page
-       self.driver.get("http://blazedemo.com")
+       self.driver.get(url)
 
        # Set default timeout for locating and element in the DOM (10 seconds)
        self.driver.implicitly_wait(10)
@@ -73,7 +73,7 @@ class purchaseTicketTest(unittest.TestCase):
 
        actual_url = self.driver.current_url
        # Verify the actual URL is equal to the expected URL
-       self.verify_url(actual_url=actual_url, expected_url="http://blazedemo.com/reserve.php")
+       self.verify_url(actual_url=actual_url, expected_url="https://blazedemo.com/reserve.php")
 
    def choose_flights(self):
        """ Choose the relevant flight """
@@ -85,7 +85,7 @@ class purchaseTicketTest(unittest.TestCase):
 
        actual_url = self.driver.current_url
        # Verify the actual URL is equal to the expected URL
-       self.verify_url(actual_url=actual_url, expected_url="http://blazedemo.com/purchase.php")
+       self.verify_url(actual_url=actual_url, expected_url="https://blazedemo.com/purchase.php")
 
    def purchase_flight(self):
        """ Purchase flight and fill out form"""
@@ -105,7 +105,7 @@ class purchaseTicketTest(unittest.TestCase):
 
        actual_url = self.driver.current_url
        # Verify the actual URL is equal to the expected URL
-       self.verify_url(actual_url=actual_url, expected_url="http://blazedemo.com/confirmation.php")
+       self.verify_url(actual_url=actual_url, expected_url="https://blazedemo.com/confirmation.php")
 
    def capture_flight_ticket_confirmation(self):
        """ Capture flight ticket order screenshot """
